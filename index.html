@@ -4,13 +4,112 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portfolio</title>
+  <style>
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.6;
+      color: #333;
+      background-color: #f9f9f9;
+    }
+
+    /* Navbar */
+    header {
+      background: #2CB770;
+      padding: 1rem 2rem;
+    }
+
+    nav ul {
+      display: flex;
+      justify-content: flex-end;
+      list-style: none;
+    }
+
+    nav ul li {
+      margin-left: 2rem;
+      color: #fff;
+      cursor: pointer;
+      font-weight: bold;
+      transition: color 0.3s ease;
+    }
+
+    nav ul li:hover {
+      color: #FFCD28;
+    }
+
+    .hero {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 4rem 2rem;
+      background: #fff;
+    }
+
+    .hero div {
+      max-width: 50%;
+    }
+
+    .hero h1 {
+      font-size: 2.5rem;
+      color: #194341;
+      margin-bottom: 1rem;
+    }
+
+    .hero p {
+      font-size: 1.1rem;
+      color: #5F6973;
+    }
+
+    .hero img {
+      max-width: 400px;
+      width: 100%;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+
+    main {
+      padding: 2rem;
+    }
+
+    main h1 {
+      margin: 2rem 0 1rem;
+      color: #194341;
+    }
+
+    main p {
+      margin-bottom: 1rem;
+      color: #444;
+    }
+
+    @media (max-width: 768px) {
+      .hero {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .hero div {
+        max-width: 100%;
+        margin-bottom: 2rem;
+      }
+
+      nav ul {
+        justify-content: center;
+      }
+    }
+  </style>
 </head>
 <body>
 
   <header>
     <nav>
       <ul>
-        <li>Home</li>
+        <li>Home</li>  
         <li>About</li>
         <li>Features</li>
       </ul>
@@ -22,20 +121,18 @@
     <section class="hero">
       <div>
         <h1>This is my Hero section</h1>
-        <p>I love to just write codes and design web application pages, I am currently looking into backend development and also hybrid mobile App development with React Nativ</p>
+        <p>I love to just write codes and design web application pages, I am currently looking into backend development and also hybrid mobile App development with React Native.</p>
       </div>
 
-      <img src="" alt="">
-
+      <img src="./assets/profile.png" alt="Hero Image">
     </section>
 
     <h1>Hello, world!</h1>
-  <p>This is my first GitHub Pages site, that is not really my first</p>
+    <p>This is my first GitHub Pages site, that is not really my first.</p>
 
-  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est excepturi maiores inventore aspernatur? Sint laborum, expedita illo delectus suscipit atque eveniet tenetur, autem possimus temporibus ipsa hic. Ipsum qui, eum optio quo, at iste voluptatibus voluptatem molestiae, voluptates consequatur suscipit quas magnam? Maiores, quam sunt nam est non cum rerum.</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est excepturi maiores inventore aspernatur? Sint laborum, expedita illo delectus suscipit atque eveniet tenetur, autem possimus temporibus ipsa hic. Ipsum qui, eum optio quo, at iste voluptatibus voluptatem molestiae, voluptates consequatur suscipit quas magnam? Maiores, quam sunt nam est non cum rerum.</p>
 
   </main>
    
-  
 </body>
 </html>
